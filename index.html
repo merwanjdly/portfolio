@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="copyright" content="Merwan Jaudally" />
+    <title>Merwan Jaudally</title>
+    <link rel="icon" href="img/myfavicon.png" />
+    <link rel="stylesheet" href="tailwind.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="antialiased relative text-gray-600">
+
+    <!--Loader début-->
+    <div class="loader">
+        <div class="first-loader"></div>
+        <div class="second-loader"></div>
+        <div class="image-loader"></div>
+        <div class="loader-text background-text">bien<br>venue<span class="full-stop">.</div>
+    </div>
+    <!--Fin Loader début-->
+
+    <!--Bar navigation-->
+    <nav id="header" class="fixed bg-black text-yellow-500 uppercase w-full z-50 top-0 bg-black md:bg-black">
+        <div id="progress" class="h-1 z-50 top-0"
+            style="background:linear-gradient(to right, #FFC100 var(--scroll), black 0);"></div>
+        <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-1 bg-black">
+            <div class="block lg:hidden pl-8 p-2">
+                <a class="text-yellow-300 font-bold text-2x1 no-underline hover:no-underline" href="#">
+                    MERWAN JAUDALLY
+                </a>
+            </div>
+            <div class="block lg:hidden pr-4 z-50">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 text-yellow-300 border-gray-600 focus:outline-none">
+                    <svg fill="text-yellow-300" viewBox="0 0 20 20" class="w-6 h-6 fill-current">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow p-4 lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-black md:bg-black z-20"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-center flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="border-b-0 md:border-b-4 border-black hover:border-yellow-300 inline-block py-2 px-4 text-yellow-300 font-bold"
+                            href="#accueil">Accueil</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="border-b-0 md:border-b-4 border-black hover:border-yellow-300 inline-block text-yellow-300 hover:text-underline font-bold py-2 px-4"
+                            href="#comp">Domaines</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="border-b-0 md:border-b-4 border-black hover:border-yellow-300 inline-block text-yellow-300 hover:text-underline font-bold py-2 px-4"
+                            href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="border-b-0 md:border-b-4 border-black hover:border-yellow-300 inline-block text-yellow-300 hover:text-underline font-bold py-2 px-4"
+                            href="#formation">Formation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Fin Bar navigation-->
+
+    <!--Accueil-->
+    <div id="accueil" class="relative z-10 flex min-h-screen h-auto justify-center items-center">
+        <div class="relative max-w-4xl">
+            <div
+                class="absolute z-10 inset-0 bg-gradient-to-r from-yellow-400 to-yellow2-400 shadow-lg transform skew-y-12 sm:-skew-y-0 sm:rotate-5 sm:rounded-lg">
+            </div>
+            <div
+                class="relative z-20 bg-white bg-fixed md:flex justify-between p-12 shadow-lg rounded-lg w-full max-w-4xl">
+                <div class="sm:flex flex-col justify-between space-y-6 py-6 md:pr-10">
+                    <div>
+                        <h2 class="text-xl">Salut, moi c'est</h2>
+                        <h1
+                            class="pt-1 text-5xl font-bold text-gray-800 hover:text-yellow-600 transform transition duration-300">
+                            Merwan JAUDALLY
+                        </h1>
+                    </div>
+                    <p class="text-xl leading-relaxed">
+                        Étudiant de 21 ans en MMI souhaitant travailler dans le Web<br>
+                        <a href="dl/CVMJ.pdf" target="_blank" class="hover:text-yellow-600 " rel="noreferrer">
+                            <ion-icon name="document-attach" size="medium" class="hover:text-yellow-600 "></ion-icon>
+                            Voici mon CV
+                        </a>
+
+
+
+                        <span id="mail"
+                            class="text-base hover:text-yellow-600 transform transition duration-300">Merwan.Jaudally@gmail.com</span>
+
+
+                    </p>
+
+                    <div class="inline-flex text-xl text-gray-600 space-x-5">
+                        <a href="https://www.instagram.com/merwan.art/" target="_blank" rel="noreferrer">
+                            <ion-icon size="large" name="logo-instagram" class="hover:text-red-600"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/merwan-jaudally-0b2094176/" target="_blank"
+                            rel="noreferrer">
+                            <ion-icon size="large" name="logo-linkedin" class="hover:text-blue-700"></ion-icon>
+                        </a>
+                        <a href="https://github.com/merwanjdly" target="_blank" rel="noreferrer">
+                            <ion-icon size="large" name="logo-github" class="hover:text-green-500"></ion-icon>
+                        </a>
+
+                    </div>
+
+                </div>
+                <img src="img/moi.jpg" alt="photo de merwan jaudally" class="flex-shrink-0 bg-cover rounded-tl rounded-br border-white shadow-md filter md:drop-shadow-lg
+                    transform hover:scale-105 duration-500 ease-in-out  " />
+            </div>
+        </div>
+    </div>
+    <!--Fin Accueil-->
+
+    <!--Compétences-->
+    <section class="bg-gray-50 pt-20 pb-28 py-20 px-8" id="comp">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-800">Domaines</h1><br>
+                <p class="font-bold text-2xl pt-2 relative two">
+                    <span>Mes compétences et capacités</span>
+                    <span class="absolute -bottom-1 left-1/4 w-0 transition-all h-1 bg-yellow-400"></span>
+                    <span class="absolute -bottom-1 right-1/4 w-0 transition-all h-1 bg-yellow-400"></span>
+                </p>
+            </div>
+            <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                <div class="relative">
+                    <div
+                        class="absolute z-10 inset-0 bg-gradient-to-r from-yellow-400 to-yellow2-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg">
+                    </div>
+
+                    <div
+                        class="relative z-20 bg-white h-full rounded-md transform transition duration-500 hover:scale-110 shadow-md px-10 py-12">
+                        <ion-icon name="code-slash-outline" class="text-5xl text-yellow-500"></ion-icon>
+                        <h2 class="pt-3 font-bold text-2xl">
+                            Développement web
+                        </h2>
+                        <p class="pt-3">
+                            Passionné des nouvelles technologies, j'ai acquis une maîtrise du <span
+                                class="text-yellow-600 font-bold">HTML et CSS</span>.<br>
+                            S'ajoute à cela, ma connaissance de <span
+                                class="text-yellow-600 font-bold">Javascript</span> et son univers.<br>
+                            J'utilise différents frameworks tels que : <span class="text-yellow-600 font-bold">React,
+                                TailwindCSS, JQuery </span> etc...
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute z-10 inset-0 bg-gradient-to-r from-yellow-400 to-yellow2-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg">
+                    </div>
+
+                    <div
+                        class="relative z-20 bg-white h-full rounded-md transform transition duration-500 hover:scale-110 shadow-md px-10 py-12">
+                        <ion-icon name="layers-outline" class="text-5xl text-yellow-500"></ion-icon>
+                        <h2 class="pt-3 font-bold text-2xl">UX/UI Design</h2>
+                        <p class="pt-3">
+                            Capable <span class="text-yellow-600 font-bold">d'améliorer et optimiser </span>
+                            l’Expérience Utilisateur tout en maintenant une veille sur le ressenti des
+                            utilisateurs d’une application.
+                            <br>
+                            De plus, je peux réaliser une <span class="text-yellow-600 font-bold">interface agréable,
+                                utile et responsive </span> pour les utilisateurs.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute z-10 inset-0 bg-gradient-to-r from-yellow-400 to-yellow2-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg">
+                    </div>
+                    <div
+                        class="relative z-20 bg-white h-full rounded-md transform transition duration-500 hover:scale-110 shadow-md px-10 py-12">
+                        <ion-icon name="chatbubbles-outline" class="text-5xl text-yellow-500"></ion-icon>
+                        <h2 class="pt-3 font-bold text-2xl">
+                            Communication
+                        </h2>
+                        <p class="pt-3">
+                            J'ai le goût du <span class="text-yellow-600 font-bold">relationnel et je suis féru de
+                                communication
+                                digitale</span>. <br>Je suis passionné par le cœur de métier de l'entreprise, les
+                            réseaux sociaux, le rédactionnel et les interactions. <br>Je dispose d'une <span
+                                class="text-yellow-600 font-bold">bonne culture web et de marketing</span>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin Compétences-->
+
+    <!--Portfolio-->
+    <section class="py-20 px-8" id="portfolio">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-800">Portfolio</h1><br>
+
+                <p class="font-bold text-2xl pt-2 relative two">
+                    <span>Quelques-un de mes projets</span>
+                    <span class="absolute -bottom-1 left-1/4 w-0 transition-all h-1 bg-yellow-400"></span>
+                    <span class="absolute -bottom-1 right-1/4 w-0 transition-all h-1 bg-yellow-400"></span>
+                </p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out lg:col-span-2">
+                    <video class="object-cover w-full h-80" playsinline autoplay muted loop>
+                        <source src="img/hex.mp4"></video>
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Site Hex#Word</h3>
+                        <p class="pt-3">
+                            Créer une ou plusieurs pages web responsives qui présenteront le code hexadécimal de votre
+                            choix
+                            représentant un mot. J'ai opté pour un design reposant et une navigation agréable.<br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">HTML / CSS / JQUERY</span>
+                        </p>
+                        <a href="https://hexword.merwan-jaudally.fr/" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+                    <video class="object-cover w-full h-80" playsinline autoplay muted loop>
+                        <source src="img/anim.mp4"></video>
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Animations CSS</h3>
+                        <p class="pt-3">
+                            Projet personnel dans lequel j'ai crée une page de connexion animée.<br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">CSS / JQuery </span>
+                        </p>
+                        <a href="https://vitrine.merwan-jaudally.fr/" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out lg:col-span-1">
+                    <video class="object-cover w-full h-80" playsinline autoplay muted loop>
+                        <source src="img/poo.mp4"></video>
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Jeu Shoot'Em'Up</h3>
+                        <p class="pt-3">
+                            Création d'un jeu Space Invaders.<br>
+                            Le but est de gagner le plus de points possible avec un nombre limité de vies. <br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">D3 / Javascript</span>
+                        </p>
+                        <a href="https://shoot.merwan-jaudally.fr/" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out lg:col-span-2">
+                    <img src="img/blog.png" alt="projet miniblog" class="object-cover w-full h-80" />
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">MiniBlog</h3>
+                        <p class="pt-3">
+                            Création d'un mini blog.<br>
+                            Interactions avec une base de données et modèle CRUD, gestion des sessions et contrôle
+                            d'accès.<br>
+                            Distinction entre compte utilisateur et compte administrateur.<br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">PHP / SQL / Bootstrap</span>
+                        </p>
+                        <a href="https://miniblog.merwan-jaudally.fr/miniblog" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out lg:col-span-2">
+                    <video class="object-cover w-full h-80" playsinline autoplay muted loop>
+                        <source src="img/jpo.mp4"></video>
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Campagne de promotion de la formation MMI</h3>
+                        <p class="pt-3">
+                            Projet de communication multisupports regroupant :<br>
+                            Une Identité visuelle spécifique MMI Champs-sur-Marne, une affiche A3, une interface
+                            d'application mobile spécifique,
+                            un homepage d'un site internet MMI Champs et enfin quelques goodies.<br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">Figma / Photoshop /
+                                Illustrator / InDesign</span>
+                        </p>
+                        <a href="dl/jpo.pdf" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out lg:col-span-1">
+                    <video class="object-cover w-full h-80" playsinline autoplay muted loop>
+                        <source src="img/p5.mp4"></video>
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Campagne culturelle</h3>
+                        <p class="pt-3">
+                            Projet de communication regroupant :<br>
+                            Une identité visuelle et graphique, un home-page en responsive ainsi que trois affiches A3
+                            et abribus.
+                            <br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">XD / Photoshop</span>
+                        </p>
+                        <a href="dl/p5.pdf" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md transform translate-y-4 hover:scale-105 duration-500 ease-in-out">
+                    <video class="object-cover w-full h-80" playsinline autoplay muted loop>
+                        <source src="img/benef.mp4"></video>
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Motion Design BENEF</h3>
+                        <p class="pt-3">
+                            Création d'une publicité pour mon projet tutoré sous forme de motion design devant raconter
+                            une histoire supérieure à 1 minute.<br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">After Effects</span>
+                        </p>
+                        <a href="dl/mdbenef.mp4" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-md shadow-md lg:col-span-2 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+                    <img src="img/benefbg.jpg" alt="Logo de mon projet tutoré" class="object-cover w-full h-80" />
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl">Web Application BENEF</h3>
+                        <p class="pt-3">
+                            Benef propose des bons plans sur différentes catégories comme des soirées ou des
+                            bons de réductions pour des activités, principalement pour les étudiants.<br>
+                            Ce projet tutoré est réalisé en équipe lors de ma seconde année de DUT.<br>
+                            Mes rôles dans ce projet sont : Scrum Master, UX/UI Designer ainsi que développeur
+                            front-end.<br>
+                            Compétences requises : <span class="text-yellow-600 font-bold">React / TailwindCSS / Figma /
+                                Méthode agile</span>
+                        </p>
+                        <a href="http://benef-app.fr/" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir
+                            projet</a>
+                        <a href="https://www.figma.com/file/5NvVdthj2N105z1j4Te4DK/PROJET-TUTORE?node-id=0%3A1" target="_blank" rel="noreferrer"
+                            class="inline-block mt-4 px-6 py-2 transform transition duration-500 hover:scale-110 bg-gradient-to-r from-yellow-400 to-yellow2-400 rounded-md shadow-md text-sm font-bold text-white">Voir maquettes
+                            </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Fin Portfolio-->
+
+    <!--Formation-->
+    <section class="pt-20 pb-36 px-8 bg-gray-50" id="formation">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-800">Formation</h1><br>
+                <p class="font-bold text-2xl pt-2 relative two">
+                    <span>Métiers du Multimédia et de l'Internet</span>
+                    <span class="absolute -bottom-1 left-1/4 w-0 transition-all h-1 bg-yellow-400"></span>
+                    <span class="absolute -bottom-1 right-1/4 w-0 transition-all h-1 bg-yellow-400"></span>
+                </p>
+            </div>
+        </div>
+        <div class="mt-16 relative max-w-4xl mx-auto">
+            <div
+                class="absolute z-10 inset-0 bg-gradient-to-r from-yellow-400 to-yellow2-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg">
+            </div>
+            <div
+                class="relative z-20 bg-white rounded-md shadow-md transform transition duration-500 hover:scale-110 px-5 py-10">
+                <p class="px-12">Le DUT <span class="text-yellow-600 font-bold">MMI (Métiers du Multimédia et de
+                        l'Internet) </span> est une formation qui se fait sur 2 ans. Elle forme dans les secteurs de
+                    <span class="text-yellow-600 font-bold">la
+                        communication, du design, du développement web, de l'audiovisuel et de la gestion de projets
+                        digitaux.</span><br><br>
+                    Cette formation peut se faire en initiale ou en alternance. Au cours de celle-ci, j'ai pu
+                    acquérir plusieurs compétences comme : <span class="text-yellow-600 font-bold">comprendre les
+                        situations de communication, concevoir,
+                        exprimer un message avec les médias numériques, développer pour le web et entreprendre dans le
+                        secteur du numérique.</span></p>
+            </div>
+        </div>
+
+    </section>
+    <!--Fin Formation-->
+
+    <!--Script optimisé icones-->
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <!--Fin Script optimisé icones-->
+
+    <!--Scroll animation navigation-->
+    <script>
+        var h = document.documentElement,
+            b = document.body,
+            st = 'scrollTop',
+            sh = 'scrollHeight',
+            progress = document.querySelector('#progress'),
+            scroll;
+        var scrollpos = window.scrollY;
+        var header = document.getElementById("header");
+        var navcontent = document.getElementById("nav-content");
+
+        document.addEventListener('scroll', function () {
+            scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            progress.style.setProperty('--scroll', scroll + '%');
+            scrollpos = window.scrollY;
+
+            if (scrollpos > 10) {
+                header.classList.add("bg-black");
+                navcontent.classList.remove("bg-black");
+                navcontent.classList.add("bg-black");
+            } else {
+                header.classList.remove("bg-black");
+                navcontent.classList.remove("bg-black");
+                navcontent.classList.add("bg-black");
+
+            }
+
+        });
+
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    </script>
+    <!--Fin Scroll animation navigation-->
+</body>
+
+</html>
